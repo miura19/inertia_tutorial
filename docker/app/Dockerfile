@@ -1,6 +1,7 @@
 FROM php:8.0-fpm
 
 ENV TZ Asia/Tokyo
+EXPOSE 5173
 
 RUN apt-get update && \
     apt-get install -y git unzip libzip-dev libicu-dev libonig-dev && \
